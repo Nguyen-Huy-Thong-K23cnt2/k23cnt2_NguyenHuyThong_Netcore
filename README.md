@@ -1,0 +1,1 @@
+# k23cnt2_NguyenHuyThong_Netcore
