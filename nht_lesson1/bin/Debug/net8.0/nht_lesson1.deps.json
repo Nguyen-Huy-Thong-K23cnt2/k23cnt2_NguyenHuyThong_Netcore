@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "nht_lesson1/1.0.0": {
+        "runtime": {
+          "nht_lesson1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "nht_lesson1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

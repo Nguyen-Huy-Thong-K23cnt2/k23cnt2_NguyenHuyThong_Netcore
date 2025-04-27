@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\MyAppNHT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5EEFBE2A-962A-4535-B25C-035B9253EF18}|MyAppNHT.csproj|d:\\k23cnt2_netcore\\k23cnt2_nguyenhuythong_netcore\\myappnht\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5EEFBE2A-962A-4535-B25C-035B9253EF18}|MyAppNHT.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EEFBE2A-962A-4535-B25C-035B9253EF18}|MyAppNHT.csproj|d:\\k23cnt2_netcore\\k23cnt2_nguyenhuythong_netcore\\myappnht\\views\\lienhe\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5EEFBE2A-962A-4535-B25C-035B9253EF18}|MyAppNHT.csproj|solutionrelative:views\\lienhe\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EEFBE2A-962A-4535-B25C-035B9253EF18}|MyAppNHT.csproj|d:\\k23cnt2_netcore\\k23cnt2_nguyenhuythong_netcore\\myappnht\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5EEFBE2A-962A-4535-B25C-035B9253EF18}|MyAppNHT.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EEFBE2A-962A-4535-B25C-035B9253EF18}|MyAppNHT.csproj|d:\\k23cnt2_netcore\\k23cnt2_nguyenhuythong_netcore\\myappnht\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EEFBE2A-962A-4535-B25C-035B9253EF18}|MyAppNHT.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EEFBE2A-962A-4535-B25C-035B9253EF18}|MyAppNHT.csproj|d:\\k23cnt2_netcore\\k23cnt2_nguyenhuythong_netcore\\myappnht\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5EEFBE2A-962A-4535-B25C-035B9253EF18}|MyAppNHT.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\MyAppNHT\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\MyAppNHT\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADAAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T09:18:34.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\MyAppNHT\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\MyAppNHT\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T09:01:31.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\MyAppNHT\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\MyAppNHT\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T08:59:57.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\MyAppNHT\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\MyAppNHT\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T08:34:49.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\MyAppNHT\\Views\\LienHe\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\LienHe\\Index.cshtml",
+              "ToolTip": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\MyAppNHT\\Views\\LienHe\\Index.cshtml",
+              "RelativeToolTip": "Views\\LienHe\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T08:08:56.911Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
