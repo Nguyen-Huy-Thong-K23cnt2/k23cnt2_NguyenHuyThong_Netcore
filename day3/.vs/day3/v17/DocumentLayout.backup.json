@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\day3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EADB8-9D3C-453C-8E31-B6FDB63E95FE}|day3.csproj|d:\\k23cnt2_netcore\\k23cnt2_nguyenhuythong_netcore\\day3\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EADB8-9D3C-453C-8E31-B6FDB63E95FE}|day3.csproj|solutionrelative:models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class.cs",
+              "DocumentMoniker": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\day3\\Models\\Class.cs",
+              "RelativeDocumentMoniker": "Models\\Class.cs",
+              "ToolTip": "D:\\k23cnt2_NETCore\\k23cnt2_NguyenHuyThong_Netcore\\day3\\Models\\Class.cs",
+              "RelativeToolTip": "Models\\Class.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T02:21:27.255Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

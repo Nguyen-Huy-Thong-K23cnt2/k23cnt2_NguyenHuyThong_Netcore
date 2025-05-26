@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\nhtlesson5.props" />
+</Project>
