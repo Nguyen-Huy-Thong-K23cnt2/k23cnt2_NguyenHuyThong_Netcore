@@ -1,0 +1,33 @@
+﻿@model NhtLab06.Models.NhtEmployee
+@{
+    ViewBag.Title = "Thêm mới nhân viên";
+}
+<h2>Thêm nhân viên</h2>
+@using (Html.BeginForm("NhtCreateSubmit", "NhtEmployee", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.NhtName)
+        @Html.TextBoxFor(m => m.NhtName, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.NhtBirthDay)
+        @Html.TextBoxFor(m => m.NhtBirthDay, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.NhtEmail)
+        @Html.TextBoxFor(m => m.NhtEmail, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.NhtPhone)
+        @Html.TextBoxFor(m => m.NhtPhone, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.NhtSalary)
+        @Html.TextBoxFor(m => m.NhtSalary, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.NhtStatus)
+        @Html.CheckBoxFor(m => m.NhtStatus)
+    </div>
+    <button type="submit" class="btn btn-success">Lưu</button>
+}

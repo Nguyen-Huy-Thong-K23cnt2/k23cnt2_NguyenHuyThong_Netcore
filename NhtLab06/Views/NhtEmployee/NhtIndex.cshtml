@@ -1,0 +1,34 @@
+﻿@model List<NhtLab06.Models.NhtEmployee>
+@{
+    ViewBag.Title = "Danh sách nhân viên";
+}
+<h2>Danh sách nhân viên</h2>
+<p><a href="@Url.Action("NhtCreate")" class="btn btn-success">Thêm mới</a></p>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Tên</th>
+        <th>Ngày sinh</th>
+        <th>Email</th>
+        <th>Điện thoại</th>
+        <th>Lương</th>
+        <th>Trạng thái</th>
+        <th>Hành động</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.NhtId</td>
+            <td>@item.NhtName</td>
+            <td>@item.NhtBirthDay.ToShortDateString()</td>
+            <td>@item.NhtEmail</td>
+            <td>@item.NhtPhone</td>
+            <td>@item.NhtSalary</td>
+            <td>@(item.NhtStatus ? "Đang làm" : "Nghỉ")</td>
+            <td>
+                <a class="btn btn-primary" href="@Url.Action("NhtEdit", new { id = item.NhtId })">Sửa</a>
+                <a class="btn btn-danger" href="@Url.Action("NhtDelete", new { id = item.NhtId })">Xóa</a>
+            </td>
+        </tr>
+    }
+</table>
