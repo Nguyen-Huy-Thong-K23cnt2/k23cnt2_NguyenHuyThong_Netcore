@@ -1,0 +1,59 @@
+﻿@model NhtLesson07.Models.NhtEmplyee
+
+@{
+    ViewData["Title"] = "Sửa ";
+}
+
+<h1>Sửa</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="NhtEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NhtID" class="control-label"></label>
+                <input asp-for="NhtID" class="form-control" />
+                <span asp-validation-for="NhtID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NhtName" class="control-label"></label>
+                <input asp-for="NhtName" class="form-control" />
+                <span asp-validation-for="NhtName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NhtBirthDay" class="control-label"></label>
+                <input asp-for="NhtBirthDay" class="form-control" />
+                <span asp-validation-for="NhtBirthDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NhtEmail" class="control-label"></label>
+                <input asp-for="NhtEmail" class="form-control" />
+                <span asp-validation-for="NhtEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NhtPhone" class="control-label"></label>
+                <input asp-for="NhtPhone" class="form-control" />
+                <span asp-validation-for="NhtPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NhtSalary" class="control-label"></label>
+                <input asp-for="NhtSalary" class="form-control" />
+                <span asp-validation-for="NhtSalary" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="NhtStatus" /> @Html.DisplayNameFor(model => model.NhtStatus)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="NhtIndex">Back to List</a>
+</div>
+

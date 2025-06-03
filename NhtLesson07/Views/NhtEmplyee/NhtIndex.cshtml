@@ -1,0 +1,71 @@
+﻿@model IEnumerable<NhtLesson07.Models.NhtEmplyee>
+
+@{
+    ViewData["Title"] = "NhtIndex";
+}
+
+<h1>Đanh sách nhân viên</h1>
+
+<p>
+    <a asp-action="NhtCreate" class="btn btn-primary">Thêm mới</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NhtID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NhtName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NhtBirthDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NhtEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NhtPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NhtSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NhtStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NhtID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NhtName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NhtBirthDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NhtEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NhtPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NhtSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NhtStatus)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "NhtEdit", new { id= item.NhtID  }) |
+                    @Html.ActionLink("Details", "NhtDetails", new { id = item.NhtID }) |
+                    @Html.ActionLink("Delete", "NhtDelete", new { id = item.NhtID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
