@@ -1,0 +1,84 @@
+﻿@model NhtLesson08.Models.NhtAccount
+
+@{
+    ViewData["Title"] = "NhtEdit";
+}
+
+<h1>NhtEdit</h1>
+
+<h4>Chỉnh sửa thông tin tài khoản</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <!-- ✅ Sửa ở đây -->
+        <form asp-action="NhtEdit" asp-route-id="@Model.NhtId">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NhtId" />
+
+            <div class="form-group">
+                <label asp-for="NhtFullName" class="control-label"></label>
+                <input asp-for="NhtFullName" class="form-control" />
+                <span asp-validation-for="NhtFullName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NhtEmail" class="control-label"></label>
+                <input asp-for="NhtEmail" class="form-control" />
+                <span asp-validation-for="NhtEmail" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NhtPhone" class="control-label"></label>
+                <input asp-for="NhtPhone" class="form-control" />
+                <span asp-validation-for="NhtPhone" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NhtAddress" class="control-label"></label>
+                <input asp-for="NhtAddress" class="form-control" />
+                <span asp-validation-for="NhtAddress" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NhtAvatar" class="control-label"></label>
+                <input asp-for="NhtAvatar" class="form-control" />
+                <span asp-validation-for="NhtAvatar" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NhtBirthday" class="control-label"></label>
+                <input asp-for="NhtBirthday" class="form-control" type="date" />
+                <span asp-validation-for="NhtBirthday" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NhtGender" class="control-label"></label>
+                <input asp-for="NhtGender" class="form-control" />
+                <span asp-validation-for="NhtGender" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NhtPassword" class="control-label"></label>
+                <input asp-for="NhtPassword" class="form-control" />
+                <span asp-validation-for="NhtPassword" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NhtFacebook" class="control-label"></label>
+                <input asp-for="NhtFacebook" class="form-control" />
+                <span asp-validation-for="NhtFacebook" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Lưu thay đổi" class="btn btn-primary" />
+                <a asp-action="NhtIndex" class="btn btn-secondary">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

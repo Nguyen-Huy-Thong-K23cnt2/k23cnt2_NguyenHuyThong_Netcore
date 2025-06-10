@@ -1,0 +1,133 @@
+﻿@model IEnumerable<NhtLesson08.Models.NhtAccount>
+@{
+    ViewData["Title"] = "Danh sách tài khoản";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+<h2 class="my-4 text-primary text-center">📋 Danh sách tài khoản</h2>
+
+<div class="d-flex justify-content-between mb-3">
+    <a asp-action="NhtCreate" class="btn btn-success">
+        <i class="bi bi-plus-circle"></i> Thêm mới
+    </a>
+    <input type="text" id="searchInput" onkeyup="filterTable()" class="form-control w-25" placeholder="🔍 Tìm theo tên..." />
+</div>
+
+<table class="table table-bordered table-hover align-middle table-striped" id="accountTable">
+    <thead class="table-dark">
+        <tr>
+            <th onclick="sortTable(0)" style="cursor:pointer;">ID ⬍</th>
+            <th onclick="sortTable(1)" style="cursor:pointer;">Họ tên ⬍</th>
+            <th>Email</th>
+            <th>Điện thoại</th>
+            <th>Địa chỉ</th>
+            <th>Avatar</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Mật khẩu</th>
+            <th>Facebook</th>
+            <th class="text-center">Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NhtId</td>
+                <td>@item.NhtFullName</td>
+                <td>@item.NhtEmail</td>
+                <td>@item.NhtPhone</td>
+                <td>@item.NhtAddress</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.NhtAvatar))
+                    {
+                        <img src="@item.NhtAvatar" class="rounded-circle" style="width:40px; height:40px;" />
+                    }
+                    else
+                    {
+                        <span class="text-muted">Không có</span>
+                    }
+                </td>
+                <td>@item.NhtBirthday.ToString("dd/MM/yyyy")</td>
+                <td>@item.NhtGender</td>
+                <td>@item.NhtPassword</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.NhtFacebook))
+                    {
+                        <a href="@item.NhtFacebook" target="_blank" class="btn btn-link p-0">Link</a>
+                    }
+                </td>
+                <td class="text-center">
+                    <a asp-action="NhtEdit" asp-route-id="@item.NhtId" class="btn btn-warning btn-sm me-1">
+                        <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a asp-action="NhtDetails" asp-route-id="@item.NhtId" class="btn btn-info btn-sm me-1">
+                        <i class="bi bi-info-circle"></i>
+                    </a>
+                    <a asp-action="NhtDelete" asp-route-id="@item.NhtId"
+                       class="btn btn-danger btn-sm"
+                       onclick="return confirm('Bạn có chắc muốn xóa tài khoản này không?');">
+                        <i class="bi bi-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        function sortTable(colIndex) {
+            const table = document.getElementById("accountTable");
+            let switching = true;
+            let dir = "asc";
+            let switchcount = 0;
+
+            while (switching) {
+                switching = false;
+                const rows = table.rows;
+
+                for (let i = 1; i < rows.length - 1; i++) {
+                    let shouldSwitch = false;
+                    const x = rows[i].getElementsByTagName("TD")[colIndex];
+                    const y = rows[i + 1].getElementsByTagName("TD")[colIndex];
+
+                    let xVal = x.textContent.trim().toLowerCase();
+                    let yVal = y.textContent.trim().toLowerCase();
+
+                    if (dir === "asc" ? xVal > yVal : xVal < yVal) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    switchcount++;
+                } else {
+                    if (switchcount === 0 && dir === "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+
+        function filterTable() {
+            const input = document.getElementById("searchInput");
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById("accountTable");
+            const rows = table.getElementsByTagName("tr");
+
+            for (let i = 1; i < rows.length; i++) {
+                const nameCell = rows[i].getElementsByTagName("td")[1];
+                if (nameCell) {
+                    const txtValue = nameCell.textContent || nameCell.innerText;
+                    rows[i].style.display = txtValue.toLowerCase().indexOf(filter) > -1 ? "" : "none";
+                }
+            }
+        }
+    </script>
+}

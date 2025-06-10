@@ -1,0 +1,48 @@
+﻿@model NhtLesson08.Models.NhtAccount
+
+@{
+    ViewData["Title"] = "Chi tiết tài khoản";
+}
+
+<h2>Chi tiết tài khoản</h2>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">ID</dt>
+        <dd class="col-sm-10">@Model.NhtId</dd>
+
+        <dt class="col-sm-2">Họ tên</dt>
+        <dd class="col-sm-10">@Model.NhtFullName</dd>
+
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Model.NhtEmail</dd>
+
+        <dt class="col-sm-2">Số điện thoại</dt>
+        <dd class="col-sm-10">@Model.NhtPhone</dd>
+
+        <dt class="col-sm-2">Địa chỉ</dt>
+        <dd class="col-sm-10">@Model.NhtAddress</dd>
+
+        <dt class="col-sm-2">Avatar</dt>
+        <dd class="col-sm-10">@Model.NhtAvatar</dd>
+
+        <dt class="col-sm-2">Ngày sinh</dt>
+        <dd class="col-sm-10">@Model.NhtBirthday.ToString("dd/MM/yyyy")</dd>
+
+        <dt class="col-sm-2">Giới tính</dt>
+        <dd class="col-sm-10">@Model.NhtGender</dd>
+
+        <dt class="col-sm-2">Mật khẩu</dt>
+        <dd class="col-sm-10">@Model.NhtPassword</dd>
+
+        <dt class="col-sm-2">Facebook</dt>
+        <dd class="col-sm-10">
+            <a href="@Model.NhtFacebook" target="_blank">@Model.NhtFacebook</a>
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="NhtIndex" class="btn btn-secondary">Quay lại</a>
+</div>

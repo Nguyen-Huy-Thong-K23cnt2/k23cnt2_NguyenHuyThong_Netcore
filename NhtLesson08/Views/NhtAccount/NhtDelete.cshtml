@@ -1,0 +1,26 @@
+﻿@model NhtLesson08.Models.NhtAccount
+
+@{
+    ViewData["Title"] = "Xóa tài khoản";
+}
+
+<h2>Xác nhận xóa tài khoản</h2>
+
+<h4>@Model.NhtFullName</h4>
+<hr />
+<dl class="row">
+    <dt class="col-sm-3">Email:</dt>
+    <dd class="col-sm-9">@Model.NhtEmail</dd>
+
+    <dt class="col-sm-3">Số điện thoại:</dt>
+    <dd class="col-sm-9">@Model.NhtPhone</dd>
+
+    <dt class="col-sm-3">Địa chỉ:</dt>
+    <dd class="col-sm-9">@Model.NhtAddress</dd>
+</dl>
+
+<form asp-action="NhtDelete" asp-route-id="@Model.NhtId" method="post">
+    <input type="hidden" asp-for="NhtId" />
+    <input type="submit" value="Xóa" class="btn btn-danger" />
+    <a asp-action="NhtIndex" class="btn btn-secondary">Hủy</a>
+</form>
