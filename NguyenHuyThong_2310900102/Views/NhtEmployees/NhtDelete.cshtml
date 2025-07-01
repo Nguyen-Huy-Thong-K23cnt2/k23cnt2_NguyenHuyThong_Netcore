@@ -1,0 +1,45 @@
+﻿@model NguyenHuyThong_2310900102.Models.NhtEmployee
+
+@{
+    ViewData["Title"] = "Xóa";
+}
+
+<h1>Delete</h1>
+
+<h3>Bạn có muốn xóa</h3>
+<div>
+    <h4>NhtEmployee</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NhtEmpName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NhtEmpName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NhtEmpLevel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NhtEmpLevel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NhtEmpStartDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NhtEmpStartDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NhtEmpStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NhtEmpStatus)
+        </dd>
+    </dl>
+    
+    <form asp-action="NhtDelete">
+        <input type="hidden" asp-for="NhtEmpId" />
+        <input type="submit" value="NhtDelete" class="btn btn-danger" /> |
+        <a asp-action="NhtIndex">Quay Lại</a>
+    </form>
+</div>

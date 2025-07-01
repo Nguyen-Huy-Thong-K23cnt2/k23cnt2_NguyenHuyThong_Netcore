@@ -1,0 +1,57 @@
+﻿@model NguyenHuyThong_2310900102.Models.NhtEmployee
+
+@{
+    ViewData["Title"] = "Thêm mới";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="NhtCreate">
+            <div class="card">
+                <div class="card-header">
+                    <h1>@ViewData["Title"]</h1>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label asp-for="NhtEmpId" class="control-label"></label>
+                        <input asp-for="NhtEmpId" class="form-control" />
+                        <span asp-validation-for="NhtEmpId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NhtEmpName" class="control-label"></label>
+                        <input asp-for="NhtEmpName" class="form-control" />
+                        <span asp-validation-for="NhtEmpName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NhtEmpLevel" class="control-label"></label>
+                        <input asp-for="NhtEmpLevel" class="form-control" />
+                        <span asp-validation-for="NhtEmpLevel" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NhtEmpStartDate" class="control-label"></label>
+                        <input asp-for="NhtEmpStartDate" type="date" class="form-control" />
+                        <span asp-validation-for="NhtEmpStartDate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NhtEmpStatus" class="control-label"></label>
+                        <input asp-for="NhtEmpStatus" class="form-control" />
+                        <span asp-validation-for="NhtEmpStatus" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="form-group">
+                        <input type="submit" value="Ghi lại" class="btn btn-primary" />
+                        <a asp-action="NhtIndex" class="btn btn-secondary">Quay lại</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

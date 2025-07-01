@@ -1,0 +1,42 @@
+﻿@model NguyenHuyThong_2310900102.Models.NhtEmployee
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Thông tin chi tiết</h1>
+
+<div>
+    <h4>NhtEmployee</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NhtEmpName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NhtEmpName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NhtEmpLevel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NhtEmpLevel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NhtEmpStartDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NhtEmpStartDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NhtEmpStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NhtEmpStatus)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="NhtEdit" asp-route-id="@Model?.NhtEmpId">Sửa</a> |
+    <a asp-action="NhtIndex">Quay Lại</a>
+</div>
